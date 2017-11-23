@@ -52,15 +52,6 @@ export default class CreateAccount extends React.Component {
     this.formClear();
   };
 
-  createAccount = (newState) => {
-    this.setState({
-      accounts: {
-        ...this.state.accounts,
-        [Object.keys(this.state.accounts).length + 1]: newState
-      }
-    });
-  }
-
   handleInputChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value
