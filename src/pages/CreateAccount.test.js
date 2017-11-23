@@ -15,7 +15,7 @@ describe('CreateAccount', () => {
 
   beforeEach(() => {
     handleSubmit = jest.fn();
-    component = mount(<CreateAccount createAcoount={handleSubmit} />);
+    component = mount(<CreateAccount createAccount={handleSubmit} />);
   });
 
   describe('Поле name', () => {
